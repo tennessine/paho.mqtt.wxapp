@@ -1,3 +1,0 @@
-<view>
-    <button type="primary" bindtap="publishMessage">publishMessage</button>
-</view>
