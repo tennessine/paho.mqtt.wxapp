@@ -1,6 +1,8 @@
 // app.js
 
-var Paho = require('./utils/paho-mqtt.js')
+// npm install --save paho.mqtt.wxapp
+var Paho = require('paho.mqtt.wxapp')
+// var Paho = require('../../dist/paho-mqtt.js')
 console.log(Paho)
 
 App({
