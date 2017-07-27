@@ -894,7 +894,7 @@ function onMessageArrived(message) {
       }
 
       if (subscribeOptions.timeout) {
-        wireMessage.timeOut = new Timeout(this, window, subscribeOptions.timeout, subscribeOptions.onFailure, [{
+        wireMessage.timeOut = new Timeout(this, subscribeOptions.timeout, subscribeOptions.onFailure, [{
           invocationContext: subscribeOptions.invocationContext,
           errorCode: ERROR.SUBSCRIBE_TIMEOUT.code,
           errorMessage: format(ERROR.SUBSCRIBE_TIMEOUT)
@@ -920,7 +920,7 @@ function onMessageArrived(message) {
         wireMessage.callback = function() { unsubscribeOptions.onSuccess({ invocationContext: unsubscribeOptions.invocationContext }); };
       }
       if (unsubscribeOptions.timeout) {
-        wireMessage.timeOut = new Timeout(this, window, unsubscribeOptions.timeout, unsubscribeOptions.onFailure, [{
+        wireMessage.timeOut = new Timeout(this, unsubscribeOptions.timeout, unsubscribeOptions.onFailure, [{
           invocationContext: unsubscribeOptions.invocationContext,
           errorCode: ERROR.UNSUBSCRIBE_TIMEOUT.code,
           errorMessage: format(ERROR.UNSUBSCRIBE_TIMEOUT)
@@ -1545,7 +1545,7 @@ function onMessageArrived(message) {
 
       if (errorCode !== undefined && this._reconnecting) {
         //Continue automatic reconnect process
-        this._reconnectTimeout = new Timeout(this, window, this._reconnectInterval, this._reconnect);
+        this._reconnectTimeout = new Timeout(this, this._reconnectInterval, this._reconnect);
         return;
       }
 
