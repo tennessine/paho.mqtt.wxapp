@@ -1,6 +1,6 @@
 # 使用方法
 
-git clone https://github.com/wxappclub/paho.mqtt.javascript.git
+git clone https://github.com/tennessine/paho.mqtt.wxapp.git
 
 执行mvn后会在target下生成paho-mqtt.js、paho-mqtt.min.js，然后在微信小程序里引入即可
 
