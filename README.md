@@ -18,4 +18,5 @@ mosquitto和emqtt需要使用nginx反向代理，因为小程序不传递"Sec-We
 可以参考这篇文章 https://zhuanlan.zhihu.com/p/24823848 
 
 # QQ群
-679985050
+679985050（我的）
+221405150（别人的）
