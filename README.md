@@ -13,6 +13,9 @@ npm install --save paho.mqtt.wxapp
 
 sample目录是我写的一个小程序连接MQTT broker的demo
 
+# 在线文档
+https://tennessine.github.io/paho.mqtt.wxapp/target/docs/
+
 # 注意事项
 mosquitto和emqtt需要使用nginx反向代理，因为小程序不传递"Sec-WebSocket-Protocol mqtt" header, 如果你在emqtt console会看到这个header打印undefined
 可以参考这篇文章 https://zhuanlan.zhihu.com/p/24823848 
