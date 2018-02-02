@@ -1,8 +1,8 @@
 {
   "name": "paho",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Pre reqs for the Paho JS client",
-  "main": "./target/paho-mqtt.min.js",
+  "main": "./target/paho-mqtt-min.js",
   "dependencies": {
     "jasmine-node": "1.14.x",
     "jsdoc": "^3.5.5",
