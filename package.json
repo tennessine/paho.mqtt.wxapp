@@ -1,6 +1,6 @@
 {
-  "name": "paho",
-  "version": "1.0.5",
+  "name": "paho-wxapp",
+  "version": "1.0.3",
   "description": "Pre reqs for the Paho JS client",
   "main": "./target/paho-mqtt-min.js",
   "dependencies": {
