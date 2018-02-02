@@ -6,6 +6,7 @@ git clone https://github.com/tennessine/paho.mqtt.wxapp.git
 
 # 直接下载
 https://unpkg.com/paho-wxapp@1.0.3/target/paho-mqtt-min.js
+
 https://unpkg.com/paho-wxapp@1.0.3/target/paho-mqtt.js
 
 # 通过npm安装
