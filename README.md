@@ -11,7 +11,7 @@ https://unpkg.com/paho-wxapp@1.0.3/target/paho-mqtt.js
 
 # 通过npm安装
 
-npm install --save paho.mqtt.wxapp
+npm install --save paho-wxapp
 
 sample目录是我写的一个小程序连接MQTT broker的demo
 
