@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view class="container">
+    <!-- MQTT测试 -->
+    <view class="uploader">
+        <view class="uploader-text" bindtap="doConnect">
+            <text>MQTT连接服务器</text>
+        </view>
+        <view class="uploader-container" wx:if="{{imgUrl}}">
+            <image
+                class="uploader-image"
+                src="{{imgUrl}}"
+                mode="aspectFit"
+                bindtap="previewImg"
+            ></image>
+        </view>
+    </view>
+
+    <view class="uploader">
+        <view class="uploader-text" bindtap="doSubscribe">
+            <text>MQTT订阅消息</text>
+        </view>
+        <view class="uploader-container" wx:if="{{imgUrl}}">
+            <image
+                class="uploader-image"
+                src="{{imgUrl}}"
+                mode="aspectFit"
+                bindtap="previewImg"
+            ></image>
+        </view>
+    </view>
+
+    <view class="uploader">
+        <view class="uploader-text" bindtap="doPublish">
+            <text>MQTT发布消息</text>
+        </view>
+        <view class="uploader-container" wx:if="{{imgUrl}}">
+            <image
+                class="uploader-image"
+                src="{{imgUrl}}"
+                mode="aspectFit"
+                bindtap="previewImg"
+            ></image>
+        </view>
+    </view>
+</view>
