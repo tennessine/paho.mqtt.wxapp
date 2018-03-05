@@ -24,3 +24,7 @@ mosquitto和emqtt需要使用nginx反向代理，因为小程序不传递"Sec-We
 
 # QQ群
 679985050
+
+# 打赏
+![微信支付](https://www.gekongfei.com/wp-content/uploads/2018/03/WeChatPay.jpg)
+![支付宝支付](https://www.gekongfei.com/wp-content/uploads/2018/03/AliPay.jpg)
