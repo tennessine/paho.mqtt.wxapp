@@ -22,6 +22,9 @@ https://tennessine.github.io/paho.mqtt.wxapp/target/docs/
 mosquitto和emqtt需要使用nginx反向代理，因为小程序不传递"Sec-WebSocket-Protocol mqtt" header, 如果你在emqtt console会看到这个header打印undefined
 可以参考这篇文章 https://zhuanlan.zhihu.com/p/24823848 
 
+# 测试
+https://www.mengmeitong.com/mqtt-client/
+
 # QQ群
 679985050
 
