@@ -26,7 +26,7 @@ mosquitto和emqtt需要使用nginx反向代理，因为小程序不传递"Sec-We
 https://www.mengmeitong.com/mqtt-client/
 
 # QQ群
-679985050
+679985050 (2k)
 
 # 打赏
 ![合体](https://www.gekongfei.com/wp-content/uploads/2018/03/pay.png)
