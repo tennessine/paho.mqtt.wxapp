@@ -24,6 +24,12 @@ mosquitto需要使用nginx反向代理，因为小程序不传递"Sec-WebSocket-
 # 测试
 https://www.mengmeitong.com/mqtt-client/
 
+# 百度云测试服务器
+host：miniprogram.mqtt.iot.bj.baidubce.com
+port：8884
+username：miniprogram/gekongfei
+password：sgx+vSWVMhLS5asUlvXZG03vDTGO8McG+9IMwbVpL40=
+
 # QQ群
 679985050 (2k)
 
