@@ -19,7 +19,6 @@ sample目录是我写的一个小程序连接MQTT broker的demo
 https://tennessine.github.io/paho.mqtt.wxapp/target/docs/
 
 # 注意事项
-mosquitto需要使用nginx反向代理，因为小程序不传递"Sec-WebSocket-Protocol mqtt" header, 可以参考这篇文章 https://zhuanlan.zhihu.com/p/24823848 
 
 小程序只能用备案后的域名，并且不能带端口号，所以如果你服务器不是用的443端口或者用的是第三方的服务器，那就需要用nginx反向代理一下。
 
@@ -54,9 +53,6 @@ server {
     proxy_pass https://miniprogram.mqtt.iot.bj.baidubce.com:8884;
     proxy_redirect off;
     proxy_set_header Host https://miniprogram.mqtt.iot.bj.baidubce.com:8884;
-
-    # proxy_set_header Sec-WebSocket-Protocol mqtt;
-    # more_clear_headers Sec-WebSocket-Protocol;
 
     proxy_http_version 1.1;
     proxy_set_header Upgrade $http_upgrade;
