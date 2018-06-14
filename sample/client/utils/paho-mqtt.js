@@ -1029,7 +1029,8 @@ function onMessageArrived(message) {
             this.connected = false;
 
             wx.connectSocket({
-                url: wsurl
+                url: wsurl,
+                protocols: ['mqtt']
             });
 
             wx.onSocketOpen(scope(this._on_socket_open, this))
