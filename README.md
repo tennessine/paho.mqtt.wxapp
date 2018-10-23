@@ -63,6 +63,3 @@ server {
 
 # QQ群
 679985050 (2k)
-
-# 扫码领红包
-![扫码](https://www.gekongfei.com/wp-content/uploads/2018/09/WechatIMG11.png)
