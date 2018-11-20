@@ -18,9 +18,6 @@ sample目录是我写的一个小程序连接MQTT broker的demo
 # 在线文档
 https://tennessine.github.io/paho.mqtt.wxapp/target/docs/
 
-# 注意事项
-
-小程序只能用备案后的域名，并且不能带端口号，所以如果你服务器不是用的443端口或者用的是第三方的服务器，那就需要用nginx反向代理一下。
 
 # 测试
 https://www.mengmeitong.com/mqtt-client/
@@ -28,11 +25,15 @@ https://www.mengmeitong.com/mqtt-client/
 # 百度云测试服务器
 host：miniprogram.mqtt.iot.bj.baidubce.com
 
-port：8884
+port：443
 
 username：miniprogram/gekongfei
 
 password：sgx+vSWVMhLS5asUlvXZG03vDTGO8McG+9IMwbVpL40=
+
+# 注意事项
+
+小程序只能用备案后的域名，并且不能带端口号，所以如果你服务器不是用的443端口或者用的是第三方的服务器，那就需要用nginx反向代理一下（百度云物接入已经支持443端口，无需代理）。
 
 # nginx反向代理
 ```
@@ -50,9 +51,9 @@ server {
   ssl_prefer_server_ciphers on;
 
   location = /mqtt {
-    proxy_pass https://miniprogram.mqtt.iot.bj.baidubce.com:8884;
+    proxy_pass https://miniprogram.mqtt.yourserver.com:8884;
     proxy_redirect off;
-    proxy_set_header Host https://miniprogram.mqtt.iot.bj.baidubce.com:8884;
+    proxy_set_header Host https://miniprogram.mqtt.yourserver.com:8884;
 
     proxy_http_version 1.1;
     proxy_set_header Upgrade $http_upgrade;
