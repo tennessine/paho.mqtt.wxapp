@@ -19,9 +19,6 @@ sample目录是我写的一个小程序连接MQTT broker的demo
 https://tennessine.github.io/paho.mqtt.wxapp/target/docs/
 
 
-# 测试
-https://www.mengmeitong.com/mqtt-client/
-
 # 百度云测试服务器
 host：miniprogram.mqtt.iot.bj.baidubce.com
 
